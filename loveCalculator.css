@@ -1,0 +1,19 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Caveat", serif;
+    font-size: 3rem;
+}
+
+#header-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#header-section img {
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+}
