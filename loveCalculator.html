@@ -6,16 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./loveCalculator.css" >
     <title>Love Calculator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header id="header-section">
-        <h1>Love Calculator</h1>
-        <img src="./assets/logo/heart_1.png" alt="heartin-logo">
-    </header>
+
+    <div id="main-calc-box">
+        <header id="header-section">
+            <h1>Love Calculator</h1>
+            <img class="logo-near-heading" src="./assets/logo/heart_1.png" alt="heartin-logo">
+        </header>
+    
+        <div id="input-and-label">
+            <label>Name 1</label>
+            <input id="name-1" type="text"  >
+            <label>Name 2</label>
+            <input id="name-2" type="text" >
+        </div>
+        
+        <button onclick="ranNumGen()">Calculate</button>
+    </div>
+
+
+    <h3>Your Love Calculator Matches : <h1 id="love-result"></h1></h3>
+    <!-- <script>
+        function ranNumGen() {
+            let name1 = document.getElementById("name-1");
+            let name2 = document.getElementById("name-2");
+            let result = document.getElementById("love-result");
+
+            if(name1.value.trim() === "" || name2.value.trim() === "") {
+                result.innerHTML = "Enter Name First";
+            } else {
+                let n = Math.random() * 101;
+                result.innerHTML = Math.floor(n) + "%";
+            }
+
+        }
+    </script> -->
+    <script src="./loveCalc.js" charset="UTF-8"></script>
 </body>
 
 </html>
